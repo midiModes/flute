@@ -23,12 +23,14 @@ void setup() {
   // initialize serial communication at 9600 bits per second:
   Serial.begin(9600);
 
-  pinMode(b1, INPUT);
-  pinMode(b2, INPUT);
-  pinMode(b3, INPUT);
-  pinMode(b4, INPUT);
-  pinMode(b5, INPUT);
-  pinMode(b6, INPUT);
+  pinMode(b1, INPUT_PULLDOWN);
+  pinMode(b2, INPUT_PULLDOWN);
+  pinMode(b3, INPUT_PULLDOWN);
+  pinMode(b4, INPUT_PULLDOWN);
+  pinMode(b5, INPUT_PULLDOWN);
+  pinMode(b6, INPUT_PULLDOWN);
+
+  pinMode(A0, INPUT_PULLDOWN);
 
 }
 
